@@ -1,0 +1,140 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Навигация */
+header {
+    background: #222;
+    padding: 15px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('1.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2em;
+}
+.btn {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #ff4500;
+}
+
+/* Галерея кейсов */
+.case-gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+.case-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.case-item {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.case-item:hover {
+    transform: scale(1.05);
+}
+.case-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.case-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.case-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Блок мотивации */
+.cta {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+}
+.cta h2 {
+    font-size: 2em;
+}
+.cta p {
+    font-size: 1.2em;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+    font-size: 0.9em;
+}
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+
+nav .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff9900;
+    transition: 0.3s;
+}
+nav ul li a:hover, .active {
+    background: #ff9900;
+    color: #121212;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}

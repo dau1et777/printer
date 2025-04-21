@@ -1,0 +1,139 @@
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero video {
+    width: 25%;
+    height: auto;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+.gallery-container img {
+    width: 30%;
+    transition: transform 0.3s;
+    
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+.review-slider {
+    display: flex;
+    overflow: hidden;
+}
+.review {
+    flex: 0 0 100%;
+    text-align: center;
+    animation: slide 20s infinite linear;
+}
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+}
+.faq-item h3 {
+    cursor: pointer;
+}
+.faq-item p {
+    display: none;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* Чтобы на маленьких экранах элементы переходили на новую строку */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f8f8; /* Легкий фон для карточек */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 200px;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 200px; /* Размер иконок */
+    height: 150px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.feature:hover img {
+    transform: scale(1.1); /* Небольшое увеличение при наведении */
+}
+
+.feature p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Добавляет расстояние между изображениями */
+    padding: 20px 0;
+}
+
+.gallery-container img {
+    width: 30%;
+    max-width: 300px; /* Ограничивает максимальный размер */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.advantage {
+    width: 200px;
+    margin: 5px auto; /* Выравнивание по центру */
+    padding: 10px;
+    text-align: center;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

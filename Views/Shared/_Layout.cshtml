@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DPrint.kz - Печать будущего</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    @RenderSection("Style",required:false)
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">3DPrint.kz</div>
+            <ul>
+                <li><a href="@Url.Action("Index","Home")" class="active">Главная</a></li>
+                <li><a href="@Url.Action("Services","Services")">Услуги</a></li>
+                <li><a href="cases.html">Кейсы</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="payment.html">Оплата</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    @RenderBody()
+
+
+    <footer>
+        <p>&copy; 2025 3DPrint.kz. Все права защищены.</p>
+    </footer>
+
+
+
+
+
+    <!-- ... Остальной HTML-код до этого места ... -->
+
+
+    <!-- Подключение Swiper и основного скрипта -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="~/js/script.js"></script>
+
+    <!-- Chatra {literal} -->
+    <script>
+        (function(d, w, c) {
+            w.ChatraID = 'jhXNsQa78skMZnDc4';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+    </script>
+    <!-- /Chatra {/literal} -->
+
+</body>
+</html>
+

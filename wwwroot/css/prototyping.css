@@ -1,0 +1,144 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+}
+
+header {
+    background: #222;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('te.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.order-btn {
+    background: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #e63e00;
+}
+
+/* Информация */
+.info {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.info img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 69, 0, 0.3);
+}
+
+/* Преимущества */
+.advantages {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.advantage-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    width: 200px;
+    margin: 47px;
+}
+
+.advantage img {
+    width: 250px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.advantage img:hover {
+    transform: scale(1.1);
+}
+
+/* Как заказать */
+.process {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #ff4500;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Форма */
+.order-form {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.order-form input, .order-form button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+button {
+    background: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63e00;
+}
