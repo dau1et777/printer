@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<main>
+    <section class="payment">
+        <h1>Оплата заказа</h1>
+
+        <!-- Отображение товаров -->
+        <div class="cart">
+            <h2>Ваш заказ</h2>
+            <ul id="cart-items">
+                <li data-price="10000">3D модель <span>10 000 ₸</span></li>
+                <li data-price="5000">Фигурка <span>5 000 ₸</span></li>
+                <li data-price="7000">Прототип <span>7 000 ₸</span></li>
+            </ul>
+            <p><strong>Итого: <span id="total-price">22 000</span> ₸</strong></p>
+
+            <!-- Промокод -->
+            <label for="promo-code">Введите промокод:</label>
+            <input type="text" id="promo-code" placeholder="PROMO2025">
+            <button type="button" id="apply-promo">Применить</button>
+        </div>
+
+        <!-- Форма оплаты -->
+        <form id="payment-form">
+            <h2>Введите контактные данные</h2>
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" required>
+
+            <h2>Данные карты</h2>
+            <label for="card-number">Номер карты:</label>
+            <input type="text" id="card-number" placeholder="0000 0000 0000 0000" required>
+
+            <label for="expiry">Срок действия:</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="123" required>
+
+            <button type="submit">Оплатить</button>
+        </form>
+    </section>
+</main>

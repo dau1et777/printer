@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<main>
+    <section class="ai-modeling">
+        <div class="container">
+            <h1>🤖 AI-Моделирование</h1>
+            <p>Опишите вашу 3D-модель, и наш AI-сервис поможет вам с её созданием.</p>
+
+            <!-- Форма для описания модели -->
+            <form id="ai-form">
+                <textarea id="model-description" placeholder="Введите описание модели..." required></textarea>
+                <button type="submit">Сгенерировать модель</button>
+            </form>
+
+            <!-- Блок для отображения результата -->
+            <div id="generated-model">
+                <h2>🖼 Сгенерированная модель:</h2>
+                <img id="model-image" src="3dprinter.jpg" alt="Результат генерации">
+            </div>
+
+            <a href="services.html" class="back-button">🔙 Назад</a>
+        </div>
+    </section>
+</main>
+
+
+<script src="~/js/script.js"></script>
