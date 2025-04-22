@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="~/css/styles.css">
     @RenderSection("Style",required:false)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">3DPrint.kz</div>
             <ul>
-                <li><a href="@Url.Action("Index","Home")" class="active">Главная</a></li>
-                <li><a href="@Url.Action("Services","Services")">Услуги</a></li>
-                <li><a href="@Url.Action("Cases","Cases")">Кейсы</a></li>
-                <li><a href="@Url.Action("About","About")">О нас</a></li>
-                <li><a href="@Url.Action("Contact","Contact")">Контакты</a></li>
-                <li><a href="@Url.Action("Payment","Payment")">Оплата</a></li>
+                @Html.Partial("_Langs")
+                <li><a href="@Url.Action("Index","Home")" class="active">@localizer["Home"]</a></li>
+                <li><a href="@Url.Action("Services","Services")">@localizer["Services"]</a></li>
+                <li><a href="@Url.Action("Cases","Cases")">@localizer["Keys"]</a></li>
+                <li><a href="@Url.Action("About","About")">@localizer["About"]</a></li>
+                <li><a href="@Url.Action("Contact","Contact")">@localizer["Contacts"]</a></li>
+                <li><a href="@Url.Action("Payment","Payment")">@localizer["Pay"]</a></li>
             </ul>
         </nav>
     </header>
@@ -53,6 +55,22 @@
             s.src = 'https://call.chatra.io/chatra.js';
             if (d.head) d.head.appendChild(s);
         })(document, window, 'Chatra');
+    </script>
+
+
+    <script>
+        function ChangeCulture(culture)
+            {
+                $.ajax({
+                    url: '/Home/ChangeCulture',
+                    data: { culture: culture },
+                    dataType: 'JSON',
+                    method: 'POST',
+                    success: function(){
+                        location.reload();
+                    }
+                });
+            }
     </script>
     <!-- /Chatra {/literal} -->
 
